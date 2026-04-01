@@ -4,6 +4,12 @@ format: html
 editor: visual
 ---
 
+config::get()
+db_credentials <- config::get('database1')
+uid <- db_credentials$uid # username
+pwd <- db_credentials$pw # password
+---
+
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
